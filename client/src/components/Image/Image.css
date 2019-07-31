@@ -1,0 +1,26 @@
+.image-container {
+  overflow: hidden;
+  position: relative;
+  line-height: 0;
+  margin-bottom: 30px;
+  min-height: 200px;
+}
+
+.image-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  display: grid;
+  place-content: center;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
