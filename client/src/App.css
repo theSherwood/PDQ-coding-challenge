@@ -1,0 +1,77 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  width: 700px;
+  height: 700px;
+  max-width: 95vw;
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  outline: none;
+  border: solid 2px white;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  text-rendering: optimizeLegibility;
+}
+
+button:disabled {
+  filter: brightness(0.2);
+}
+
+.container {
+  flex: 1 1 auto;
+  display: grid;
+  place-content: center;
+  position: relative;
+  /* border-bottom: solid 1px white;
+  border-top: solid 1px white; */
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.9;
+  display: grid;
+  place-content: center;
+}
+
+.scrolling-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
