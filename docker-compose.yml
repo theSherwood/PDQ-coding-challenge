@@ -9,7 +9,8 @@ services:
     environment:
       NODE_ENV: development
     volumes:
-      - ./server:/server
+      - ./server:/server/
+      - /server/node_modules
   client:
     container_name: client
     build:
@@ -17,4 +18,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./client:/client
+      - ./client:/client/
+      - /client/node_modules
